@@ -14,6 +14,9 @@
 		8BB883721AD5142300D6C91E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BB883711AD5142300D6C91E /* Images.xcassets */; };
 		8BB883751AD5142300D6C91E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB883731AD5142300D6C91E /* LaunchScreen.xib */; };
 		8BB883811AD5142300D6C91E /* todolistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB883801AD5142300D6C91E /* todolistTests.swift */; };
+		8BB8838B1AD517AD00D6C91E /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8838A1AD517AD00D6C91E /* CategoryManager.swift */; };
+		8BDE212D1AD519AB00F8D99C /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE212C1AD519AB00F8D99C /* TaskManager.swift */; };
+		8BDE21711AD52B3000F8D99C /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE216F1AD52B3000F8D99C /* SwiftColorPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,10 @@
 		8BB8837A1AD5142300D6C91E /* todolistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todolistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB8837F1AD5142300D6C91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB883801AD5142300D6C91E /* todolistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistTests.swift; sourceTree = "<group>"; };
+		8BB8838A1AD517AD00D6C91E /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
+		8BDE212C1AD519AB00F8D99C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		8BDE216E1AD52B3000F8D99C /* iOS_Swift_ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS_Swift_ColorPicker.h; sourceTree = "<group>"; };
+		8BDE216F1AD52B3000F8D99C /* SwiftColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColorPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 		8BB8835A1AD5142300D6C91E = {
 			isa = PBXGroup;
 			children = (
+				8BDE216C1AD52B3000F8D99C /* iOS_Swift_ColorPicker */,
 				8BB883651AD5142300D6C91E /* todolist */,
 				8BB8837D1AD5142300D6C91E /* todolistTests */,
 				8BB883641AD5142300D6C91E /* Products */,
@@ -83,6 +91,8 @@
 				8BB8836A1AD5142300D6C91E /* FirstViewController.swift */,
 				8BB8836C1AD5142300D6C91E /* SecondViewController.swift */,
 				8BB8836E1AD5142300D6C91E /* Main.storyboard */,
+				8BB8838A1AD517AD00D6C91E /* CategoryManager.swift */,
+				8BDE212C1AD519AB00F8D99C /* TaskManager.swift */,
 				8BB883711AD5142300D6C91E /* Images.xcassets */,
 				8BB883731AD5142300D6C91E /* LaunchScreen.xib */,
 				8BB883661AD5142300D6C91E /* Supporting Files */,
@@ -113,6 +123,16 @@
 				8BB8837F1AD5142300D6C91E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BDE216C1AD52B3000F8D99C /* iOS_Swift_ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				8BDE216E1AD52B3000F8D99C /* iOS_Swift_ColorPicker.h */,
+				8BDE216F1AD52B3000F8D99C /* SwiftColorPickerViewController.swift */,
+			);
+			name = iOS_Swift_ColorPicker;
+			path = ../iOS_Swift_ColorPicker/iOS_Swift_ColorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,8 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB8836D1AD5142300D6C91E /* SecondViewController.swift in Sources */,
+				8BB8838B1AD517AD00D6C91E /* CategoryManager.swift in Sources */,
+				8BDE212D1AD519AB00F8D99C /* TaskManager.swift in Sources */,
 				8BB883691AD5142300D6C91E /* AppDelegate.swift in Sources */,
 				8BB8836B1AD5142300D6C91E /* FirstViewController.swift in Sources */,
+				8BDE21711AD52B3000F8D99C /* SwiftColorPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +434,7 @@
 				8BB883861AD5142300D6C91E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BB883871AD5142300D6C91E /* Build configuration list for PBXNativeTarget "todolistTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +443,7 @@
 				8BB883891AD5142300D6C91E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

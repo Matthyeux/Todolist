@@ -8,7 +8,9 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet var tblCategories: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,36 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //returning the view
+    override func viewWillAppear(animated: Bool) {
+        tblCategories.reloadData()
+    }
+    
+    //UITableViewDelete
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == UITableViewCellEditingStyle.Delete) {
+            categoryManager.categories.removeAtIndex(indexPath.row)
+            tblCategories.reloadData()
+        }
+    }
+    
+    //UITableViewDataSource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categoryManager.categories.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
+        
+        cell.detailTextLabel?.text = categoryManager.categories[indexPath.row].name
+        cell.detailTextLabel?.textColor = UIColor.whiteColor()
+        cell.backgroundColor = categoryManager.categories[indexPath.row].color
+        
+        return cell
+    }
+    
+    
 
 
 }
