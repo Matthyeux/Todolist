@@ -12,7 +12,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate, UIPopoverPres
 
     
     @IBOutlet var txtCategory: UITextField!
-    var categoryColor: UIColor!
+    var categoryColor = UIColor.cyanColor()
     
     override func viewDidLoad() {
         super.viewDidLoad()
