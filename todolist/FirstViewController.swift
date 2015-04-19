@@ -1,3 +1,4 @@
+
 //
 //  FirstViewController.swift
 //  todolist
@@ -57,9 +58,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destination = segue.destinationViewController as ViewController
         if segue.identifier == "ShowTask"
         {
+            let destination = segue.destinationViewController as ViewController
             destination.taskmanager = categorieDest
         }
         

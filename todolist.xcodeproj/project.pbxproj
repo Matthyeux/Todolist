@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BAFF2361AD537F90009DFEA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BAFF2331AD537F90009DFEA /* Info.plist */; };
-		8BAFF2371AD537F90009DFEA /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAFF2351AD537F90009DFEA /* SwiftColorPickerViewController.swift */; };
 		8BB3C2131AE2800A003A1C8C /* ViewAddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3C2121AE2800A003A1C8C /* ViewAddTask.swift */; };
 		8BB883691AD5142300D6C91E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB883681AD5142300D6C91E /* AppDelegate.swift */; };
 		8BB8836B1AD5142300D6C91E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8836A1AD5142300D6C91E /* FirstViewController.swift */; };
@@ -18,6 +16,8 @@
 		8BB883751AD5142300D6C91E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB883731AD5142300D6C91E /* LaunchScreen.xib */; };
 		8BB883811AD5142300D6C91E /* todolistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB883801AD5142300D6C91E /* todolistTests.swift */; };
 		8BB8838B1AD517AD00D6C91E /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8838A1AD517AD00D6C91E /* CategoryManager.swift */; };
+		8BC7CA201AE3B76300B9968D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BC7CA1D1AE3B76300B9968D /* Info.plist */; };
+		8BC7CA211AE3B76300B9968D /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC7CA1F1AE3B76300B9968D /* SwiftColorPickerViewController.swift */; };
 		8BDE212D1AD519AB00F8D99C /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE212C1AD519AB00F8D99C /* TaskManager.swift */; };
 		8BF48C251ADD92200071C0AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF48C241ADD92200071C0AB /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -33,9 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BAFF2331AD537F90009DFEA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BAFF2341AD537F90009DFEA /* iOS_Swift_ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS_Swift_ColorPicker.h; sourceTree = "<group>"; };
-		8BAFF2351AD537F90009DFEA /* SwiftColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColorPickerViewController.swift; sourceTree = "<group>"; };
 		8BB3C2121AE2800A003A1C8C /* ViewAddTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAddTask.swift; sourceTree = "<group>"; };
 		8BB883631AD5142300D6C91E /* todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BB883671AD5142300D6C91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +46,11 @@
 		8BB8837F1AD5142300D6C91E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BB883801AD5142300D6C91E /* todolistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todolistTests.swift; sourceTree = "<group>"; };
 		8BB8838A1AD517AD00D6C91E /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
+		8BC7CA1D1AE3B76300B9968D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC7CA1E1AE3B76300B9968D /* iOS_Swift_ColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS_Swift_ColorPicker.h; sourceTree = "<group>"; };
+		8BC7CA1F1AE3B76300B9968D /* SwiftColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftColorPickerViewController.swift; sourceTree = "<group>"; };
 		8BDE212C1AD519AB00F8D99C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
-                8BF48C241ADD92200071C0AB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BF48C241ADD92200071C0AB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 		8BB8835A1AD5142300D6C91E = {
 			isa = PBXGroup;
 			children = (
-				8BDE21781AD55AA300F8D99C /* iOS_Swift_ColorPicker */,
+				8BC7CA1C1AE3B76300B9968D /* iOS_Swift_ColorPicker */,
 				8BB883651AD5142300D6C91E /* todolist */,
 				8BB8837D1AD5142300D6C91E /* todolistTests */,
 				8BB883641AD5142300D6C91E /* Products */,
@@ -133,12 +133,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8BDE21781AD55AA300F8D99C /* iOS_Swift_ColorPicker */ = {
+		8BC7CA1C1AE3B76300B9968D /* iOS_Swift_ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
-				8BDE21791AD55AA300F8D99C /* Info.plist */,
-				8BDE217A1AD55AA300F8D99C /* iOS_Swift_ColorPicker.h */,
-				8BDE217B1AD55AA300F8D99C /* SwiftColorPickerViewController.swift */,
+				8BC7CA1D1AE3B76300B9968D /* Info.plist */,
+				8BC7CA1E1AE3B76300B9968D /* iOS_Swift_ColorPicker.h */,
+				8BC7CA1F1AE3B76300B9968D /* SwiftColorPickerViewController.swift */,
 			);
 			name = iOS_Swift_ColorPicker;
 			path = ../iOS_Swift_ColorPicker/iOS_Swift_ColorPicker;
@@ -224,7 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDE217C1AD55AA300F8D99C /* Info.plist in Resources */,
+				8BC7CA201AE3B76300B9968D /* Info.plist in Resources */,
 				8BB883701AD5142300D6C91E /* Main.storyboard in Resources */,
 				8BB883751AD5142300D6C91E /* LaunchScreen.xib in Resources */,
 				8BB883721AD5142300D6C91E /* Images.xcassets in Resources */,
@@ -245,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BDE217D1AD55AA300F8D99C /* SwiftColorPickerViewController.swift in Sources */,
+				8BC7CA211AE3B76300B9968D /* SwiftColorPickerViewController.swift in Sources */,
 				8BB8836D1AD5142300D6C91E /* SecondViewController.swift in Sources */,
 				8BF48C251ADD92200071C0AB /* ViewController.swift in Sources */,
 				8BB3C2131AE2800A003A1C8C /* ViewAddTask.swift in Sources */,
