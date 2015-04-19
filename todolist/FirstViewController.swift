@@ -11,6 +11,7 @@ import UIKit
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tblCategories: UITableView!
+    var categorieDest:TaskManager?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +51,19 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("ShowTask", sender: nil)
+        categorieDest = categoryManager.categories[indexPath.row].tasks
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destination = segue.destinationViewController as ViewController
+        if segue.identifier == "ShowTask"
+        {
+            destination.taskmanager = categorieDest
+        }
+        
+    }
     
 
 
